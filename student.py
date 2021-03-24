@@ -289,7 +289,7 @@ class Student:  #_______Creating a main window
     # Functions for DB_MySql
     def add_data(self):
         if self.var_dep.get()=="Select Department" or self.var_std_name.get()=="" or self.var_std_id.get()=="":
-            messagebox.showerror("Error 👾","कृपया नारळ बाहेर फोडा 🧄🥑🥥 ",parent=self.root)
+            messagebox.showerror("Error 👾"," All field are required ",parent=self.root)
         else:
             messagebox.showinfo(" Data is Saved","Wellcome 🙏")
             #Mysql Database Connecton>>>>
