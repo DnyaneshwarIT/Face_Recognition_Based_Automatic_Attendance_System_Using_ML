@@ -547,9 +547,9 @@ class Student:  #_______Creating a main window
 
                     if cv2.waitKey(1)==13 or int(img_id)==10:
                         break
-                    cap.release()
-                    cv2.destroyAllWindows()
-                    messagebox.showinfo("Result","Generating The Datasets is Completed !")
+                 cap.release()
+                 cv2.destroyAllWindows()
+                 messagebox.showinfo("Result","Generating The Datasets is Completed !")
             except Exception as es:
                 messagebox.showerror("Error 👾 ",f"Deu To:{str(es)}",parent=self.root)
 
